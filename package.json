@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Torofms37/rollup/issues"
   },
-  "homepage": "https://github.com/Torofms37/rollup#readme"
+  "homepage": "https://github.com/Torofms37/rollup#readme",
+  "devDependencies": {
+    "rollup": "^3.3.0"
+  }
 }
