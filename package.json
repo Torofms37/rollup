@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "web-dev-server --config web-dev-server.config.js",
+    "build": "rollup -c",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,13 @@
   },
   "homepage": "https://github.com/Torofms37/rollup#readme",
   "devDependencies": {
-    "rollup": "^3.3.0"
-  }
+    "@rollup/plugin-html": "^1.0.1",
+    "@rollup/plugin-image": "^3.0.1",
+    "@web/dev-server": "^0.1.35",
+    "gh-pages": "^4.0.0",
+    "rollup": "^3.3.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-css-only": "^4.3.0"
+  },
+  "type": "module"
 }
